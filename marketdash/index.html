@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trilha | Dashboard de marketing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="auth" class="auth hidden"></div>
+
+  <div id="app" class="app hidden">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand"><span class="logo">T</span><span>Trilha</span></div>
+      <nav id="nav"></nav>
+      <div class="side-user">
+        <div class="avatar" id="avatar"></div>
+        <div class="who"><strong id="uName"></strong><small id="uEmail"></small></div>
+        <button class="icon-btn" data-act="logout" title="Sair" id="logoutBtn"></button>
+      </div>
+    </aside>
+    <div class="main">
+      <header class="topbar">
+        <button class="icon-btn menu-btn" data-act="menu" aria-label="Abrir menu">☰</button>
+        <h1 id="pageTitle">Dashboard</h1>
+        <button class="icon-btn" data-act="theme" id="themeBtn" title="Alternar tema"></button>
+      </header>
+      <main id="view"></main>
+    </div>
+  </div>
+
+  <div id="modal" class="modal hidden"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
